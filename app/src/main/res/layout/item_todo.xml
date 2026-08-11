@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/card_bg"
+    android:layout_marginBottom="8dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_vertical">
+
+        <CheckBox
+            android:id="@+id/cb_todo_completed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_todo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Todo Title"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/text_dark"
+                android:layout_marginBottom="4dp" />
+
+            <TextView
+                android:id="@+id/tv_todo_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Description here"
+                android:textSize="13sp"
+                android:textColor="@color/hint"
+                android:layout_marginBottom="4dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/btn_todo_edit"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_bg_secondary"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_edit"
+            android:contentDescription="Edit"
+            android:layout_marginRight="5dp" />
+
+        <ImageButton
+            android:id="@+id/btn_todo_delete"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:background="@drawable/btn_bg_danger"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_menu_delete"
+            android:contentDescription="Delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_todo_priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HIGH"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/tv_todo_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📁 Work"
+            android:textSize="12sp"
+            android:textColor="@color/hint"
+            android:layout_marginRight="8dp" />
+
+        <TextView
+            android:id="@+id/tv_todo_due_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="📅 01/01/2024"
+            android:textSize="12sp"
+            android:textColor="@color/hint" />
+    </LinearLayout>
+
+</LinearLayout>
